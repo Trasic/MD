@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:icon="@drawable/ic_baseline_login_24"
+        android:key="@string/sign_in"
+        android:title="@string/sign_in" />
+
+    <Preference
+        android:icon="@drawable/ic_baseline_language_setting_24"
+        android:key="@string/language"
+        android:summary="@string/current_language"
+        android:title="@string/language" />
+
+    <Preference
+        android:icon="@drawable/ic_baseline_info_setting_24"
+        android:key="@string/about"
+        android:title="@string/about" />
+
+    <Preference
+        android:icon="@drawable/ic_baseline_exit_to_app_24"
+        android:key="@string/sign_out"
+        android:title="@string/sign_out" />
+
+</PreferenceScreen>

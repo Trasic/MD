@@ -1,0 +1,112 @@
+plugins {
+    id 'com.google.secrets_gradle_plugin' version '0.4'
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-parcelize'
+    id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
+
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId 'com.md.Trasic'
+        minSdk 21
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        buildConfigField 'String', 'BASE_URL', '"https://backend-dot-trasic-capstone-project.et.r.appspot.com/"'
+        buildConfigField 'String', 'BASE_URL_AI', '"https://trasic-prediction-jaya-4tgki3axiq-et.a.run.app/"'
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
+    namespace 'com.md.Trasic'
+}
+
+dependencies {
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.16.1'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.16.1'
+    implementation 'com.google.android.gms:play-services-auth:20.2.0'
+
+    implementation 'androidx.room:room-paging:2.5.0-alpha01'
+    implementation 'androidx.room:room-runtime:2.4.2'
+    implementation 'androidx.test.ext:junit-ktx:1.1.3'
+    implementation 'androidx.test.espresso:espresso-contrib:3.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.preference:preference-ktx:1.2.0'
+
+    implementation 'com.google.firebase:firebase-common-ktx:20.1.1'
+    implementation 'com.google.firebase:firebase-auth-ktx:21.0.4'
+    implementation 'com.google.firebase:firebase-auth:21.0.4'
+    implementation 'com.google.firebase:firebase-database-ktx:20.1.0'
+    implementation 'com.google.firebase:firebase-analytics-ktx:21.3.0'
+
+    kapt 'androidx.room:room-compiler:2.4.2'
+    implementation 'androidx.room:room-ktx:2.5.0-alpha01'
+    implementation "androidx.paging:paging-runtime-ktx:3.1.1"
+
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.2'
+
+    def camerax_version = "1.1.0-beta01"
+    implementation "androidx.camera:camera-core:${camerax_version}"
+    implementation "androidx.camera:camera-camera2:${camerax_version}"
+    implementation "androidx.camera:camera-lifecycle:${camerax_version}"
+    implementation "androidx.camera:camera-video:${camerax_version}"
+    implementation "androidx.camera:camera-view:${camerax_version}"
+    implementation "androidx.camera:camera-extensions:${camerax_version}"
+    implementation 'com.google.guava:guava:29.0-android'
+
+    implementation "androidx.activity:activity-ktx:1.4.0"
+    implementation 'androidx.fragment:fragment-ktx:1.4.1'
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.4.1"
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    implementation "com.squareup.okhttp3:logging-interceptor:4.9.0"
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+
+    implementation 'com.google.android.material:material:1.7.0-alpha01'
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation 'org.apache.commons:commons-lang3:3.4'
+    implementation 'com.google.android.gms:play-services-auth:20.1.0'
+    implementation 'com.google.firebase:firebase-database-ktx:20.1.0'
+    implementation 'com.google.firebase:firebase-database-ktx:20.2.2'
+    implementation 'com.google.android.gms:play-services-auth:20.1.0'
+
+    implementation 'com.google.firebase:firebase-auth-ktx:21.0.2'
+
+
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_fragment"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/scan_fragment"
+        android:icon="@drawable/ic_baseline_qr_code_scanner_36"
+        android:title="@string/scan" />
+
+    <item
+        android:id="@+id/setting_fragment"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="@string/setting" />
+</menu>

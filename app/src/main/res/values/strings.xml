@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name" translatable="false">Trasic</string>
+    <string name="home" translatable="false">Home</string>
+    <string name="favorite">Favorite</string>
+    <string name="setting">Settings</string>
+    <string name="language">Language</string>
+    <string name="about">About This App</string>
+    <string name="about_app">This app is created by MD Bangkit 2023</string>
+    <string name="item_title" translatable="false">Item Title</string>
+    <string name="item_desc" translatable="false">This is a fake description of the musical instrument shown. This is a fake description of the musical instrument shown. This is a fake description of the musical instrument shown. This is a fake description of the musical instrument shown.</string>
+    <string name="camera_failed">Failed to operate camera</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="choose_image">Choose Image</string>
+    <string name="view_all">View All</string>
+    <string name="more">More</string>
+    <string name="retake">Retake</string>
+    <string name="upload">Upload</string>
+    <string name="no_item_found">No Item Found</string>
+    <string name="network_error">Network error. Please check try again.</string>
+    <string name="scan_prompt_text">Let\'s scan to discover traditional instruments!</string>
+    <string name="search">Search traditional instruments</string>
+    <string name="search_found">%1$d traditional instruments(s) Found</string>
+    <string name="banner_text">What traditional instruments to\ndiscover today?</string>
+    <string name="show_title">traditional instruments Show</string>
+    <string name="details_title">Traditional Instruments Details</string>
+    <string name="home_header1">Traditional Instruments</string>
+    <string name="refresh">Refresh Page</string>
+    <string name="all_item">Explore All traditional instruments</string>
+    <string name="search_banner_text">Let\'s discover traditional instruments!</string>
+    <string name="confirm_upload">Confirm Upload</string>
+    <string name="capture_requirement_prompt">Please Capture Within The Border</string>
+    <string name="predicting">Predicting…</string>
+    <string name="predicted_as">Predicted as %s</string>
+    <string name="searching_for">Searching for %s</string>
+    <string name="sign_in_failed">Sign in failed</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sign_in">Sign In</string>
+    <string name="account">Account</string>
+    <string name="confirm_sign_out">Confirm sign out?</string>
+    <string name="sign_in_as">Signed in as %s</string>
+    <string name="title_slogan" translatable="false">The traditional instruments Exploration</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="failed_renew_token">Failed to renew token. Please resign in.</string>
+    <string name="require_login_prompt">You are a guest. Please sign in first.</string>
+    <string name="no_data">No data.</string>
+    <string name="image_rotated_prompt">Try capture in different orientation (portrait or landscape) if the image is rotated.</string>
+    <string name="scan">Scan</string>
+    <string name="current_language">English</string>
+</resources>
